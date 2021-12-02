@@ -1,0 +1,150 @@
+body {
+    max-width: 1920px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.header {
+    @include column;
+    justify-content: center;
+    width: 100%;
+    background: url(img/Rectangle3.png);
+    &__logo {
+        margin-top: 160px;
+        width: 320px;
+        height: 320px;
+    }
+    &__subtitle {
+        margin: 80px 0px 154px 0px;
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+}
+.main {
+    width: 100%;
+    .main__2021 {
+        @include row;
+        background-color: #000000;
+        .main__2021-collection {
+            margin: 93px 332px 0px 332px;
+        }
+        .main__2021-image {
+            @include column;
+            background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(70, 60, 60, 0.5)), url(img/Rectangle8.png), #000000;
+            .main__new-collection {
+                margin: 484px 252px 0px 252px;
+            }
+        }
+    }
+    .main__2018 {
+        @include row;
+        background-color: #000000;
+        .main__2018-image {
+            background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(70, 60, 60, 0.5)), #000000;
+        }
+        .main__2018-collection {
+            margin-top: 100px;
+            @include column;
+            .collection-heading {
+                @include column;
+            }
+        }
+        .collection-subtitle {
+            margin: 40px 285px 0px 285px;
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+    }
+    .main__catalog {
+        @include column;
+        background-color: #000000;
+        .catalog-heading {
+            margin-top: 120px;
+
+        }
+        .catalog-cards {
+            margin-top: 81px;
+            @include row;
+            .card {
+                margin: 0px 12.5px 0px 12.5px;
+                .card__icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 260px;
+                    height: 325px;
+                    background: #191B1C;
+                }
+                .card__title {
+                    margin-top: 25px;
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+
+                    color: #FFFFFF;
+                }
+                .card__price {
+                    margin-top: 10px;
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 21px;
+
+                    color: #D0D0D0;
+                }
+            }
+        }
+    }
+}
+.heading {
+    @include column;
+    .heading-title {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+    .heading-line {
+        margin-top: 50px;
+        width: 120px;
+        height: 1px;
+        background: white
+    }
+}
