@@ -1,0 +1,12 @@
+.container {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1920px) {
+  .about-porten {
+    background-repeat: repeat;
+  }
+}
+/*# sourceMappingURL=index.a4ca7d81.css.map */
